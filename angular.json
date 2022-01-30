@@ -27,9 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/mdb.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/mdb.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,9 +97,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/mdb.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/mdb.min.js"
+            ]
           }
         }
       }

@@ -1,0 +1,30 @@
+<div class="container py-5 my-5">
+    <div class="d-flex mb-3">
+        <h4 class="mb-0">Table entries</h4>
+        <a routerLink="/add" class="btn btn-primary btn-sm ms-auto">Add New</a>
+    </div>
+    <table class="table table-bordered table-sm w-100">
+        <thead class="bg-light text-dark">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Gender</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of tableList; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{a.name}}</td>
+                <td>{{a.email}}</td>
+                <td>{{a.phone}}</td>
+                <td>{{a.gender}}</td>
+                <td><button class="btn btn-success btn-sm" (click)="editBtn(a)">Edit</button></td>
+                <td><button class="btn btn-danger btn-sm" (click)="deleteBtn(a.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
